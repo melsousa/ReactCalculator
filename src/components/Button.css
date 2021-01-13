@@ -1,0 +1,45 @@
+/* usando variaveis em css */
+
+
+/*precisa-se dessa classe para declarar variavel */
+
+ :root {
+    /* example de criação de variavel */
+    /* --NomeDaVariavel: valor; */
+    --bg-button: #f0f0f0;
+    /*criando uma variavel */
+    --border-button: solid 1px #888;
+}
+
+.button {
+    font-size: 1.4rem;
+    background-color: var(--bg-button) ;
+    /* utilizando a variavel */
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;
+    /*tirando a cor da bordar ao clicar*/
+}
+
+.button:active {
+    /*quando clicar vai ficar mais escuro */
+    background-color: #ccc;
+}
+.button.double {
+    grid-column: span 2;
+    /*vai ser aplicado ao button 0 para ocupar duas colunas */
+}
+
+.button.triple {
+    grid-column: span 3;
+}
+.button.operation {
+    /* quando o botão for uma operação */
+    background-color: #fa8231;
+    color: #fff;
+}
+
+.button.operation:active {
+    background-color: #fa8231cc;
+}

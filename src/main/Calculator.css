@@ -1,0 +1,13 @@
+.calculator {
+    height: 320px;
+    width: 235px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* O conteúdo é cortado e nenhuma barra de rolagem é exibida. */
+    display: grid;
+    /* colocando um em baixo do outro */
+    grid-template-columns: repeat(4, 25%);
+    /* 4 colunas e os buttons ocupando 25% */
+     grid-template-rows: 1fr 48px 48px 48px 48px 48px;/* 1fr está pegando o que resta na tela */
+    /*linhas  */
+}

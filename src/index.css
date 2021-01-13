@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ @font-face {
+     /*referenciado a font */
+     font-family: 'RobotoMono';
+     src: url('./fonts/Roboto-Thin.ttf');
+ }
+ 
+ * {
+     /*aplicando para todos os elementos */
+     font-family: 'RobotoMono', 'monospace';
+ }
+ 
+ body {
+     display: flex;
+     height: 100vh;
+     /*colocando bem no topo */
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     /* texto centralizado */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+     color: #fff;
+     background: linear-gradient(to right, #16bffd, #cb3066); /* degrader */
+ }
